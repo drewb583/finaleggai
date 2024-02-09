@@ -17,10 +17,25 @@
 		<meta property="og:site_name" content="Final Egg">
 	</head>
 	<body>
-	<head>
-     <title>Random Image</title>
-     <script src="randompix.js"></script>
-	</head>
+	<script> 
+        const pics = [ 
+            'url( 
+"https://finalegg.com/images/eggman1.gif")', 
+            'url( 
+"https://finalegg.com/images/eggman2.gif")', 
+            'url( 
+"https://finalegg.com/images/eggman3.gif")', 
+        ]; 
+        const pic = document.querySelector('section'); 
+  
+        function showImage() { 
+            var a = Math.floor(Math.random() * pics.length); 
+            var img = pics[a]; 
+            pic.style.backgroundImage = img; 
+        } 
+  
+        setInterval(showImage, 1000); 
+    </script> 
 	<h1 style="text-align: center;">&nbsp;</h1>
 	<h1 style="text-align: center;"><span style="color: #FFFFFF;">COMING SOON</span></h1>
 	
